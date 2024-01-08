@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/guoliang/devSpace/MCU/STM32/SWPrj/HALPrj/EXIT/Encode_Count_EXIT/Core/Startup/startup_stm32f103rctx.s
+

@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Encode_Count_EXIT",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Encode_Count_EXIT.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Encode_Count_EXIT.elf-Debug-42a8f24b67b96402278d.json",
+					"name" : "Encode_Count_EXIT.elf",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/guoliang/devSpace/MCU/STM32/SWPrj/HALPrj/EXIT/Encode_Count_EXIT/cmake-build-debug",
+		"source" : "C:/Users/guoliang/devSpace/MCU/STM32/SWPrj/HALPrj/EXIT/Encode_Count_EXIT"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
