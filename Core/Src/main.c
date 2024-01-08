@@ -98,7 +98,6 @@ int main(void)
   while (1)
   {
       //Count += Get_Encode_CNT();
-      printf("Count: %ld\n", Get_Encode_CNT());
       HAL_Delay(10);
     /* USER CODE END WHILE */
 

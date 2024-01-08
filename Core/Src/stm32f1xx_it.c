@@ -22,6 +22,7 @@
 #include "stm32f1xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -232,30 +233,18 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
     if(GPIO_Pin == GPIO_PIN_0)
     {
-        if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == 0)
+        if((HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0) &&(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == 0))
         {
-            EncodeCount--;
+            printf("Count: %ld\n", ++EncodeCount);
         }
-        __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_0);
     }
     else if(GPIO_Pin == GPIO_PIN_1)
     {
-        if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0)
+        if((HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1) == 0)&&(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0))
         {
-            EncodeCount++;
+            printf("Count: %ld\n", --EncodeCount);
         }
-        __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_1);
     }
 }
 
-int32_t Get_Encode_CNT()
-{
-    /*
-    int32_t  temp;
-    temp = EncodeCount;
-    EncodeCount = 0;
-    return temp;
-     */
-    return EncodeCount;
-}
 /* USER CODE END 1 */
